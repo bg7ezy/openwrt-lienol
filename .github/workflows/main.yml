@@ -50,6 +50,7 @@ jobs:
       - name: Update feeds
         run: |
           #sed -i 's/#src-git helloworld/src-git helloworld/g' ./feeds.conf.default
+          sed -i 's/Lienol\/openwrt-package/huchanghui123\/Lienol-openwrt-packages-backup/g' ./feeds.conf.default
           #echo "src-git laohu https://github.com/huchanghui123/Lienol-openwrt-packages-backup" >>./feeds.conf.default
           rm -rf feeds
           ./scripts/feeds clean
